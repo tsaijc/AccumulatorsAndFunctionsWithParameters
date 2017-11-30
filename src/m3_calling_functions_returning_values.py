@@ -149,20 +149,17 @@ def run_test_digits_in_cube():
     print('-----------------------------------------------------')
 
     expected = 8
-    n = 2
-    answer = digits_in_cube(n)
-    print('Test 1 expected:', expected)
-    print('       actual:  ', answer)
+    answer = digits_in_cube(2)
+    print("Test 1 expected:", expected)
+    print("       actual:  ", answer)
 
-    expected1 = 27
-    n1 = 3
-    answer1 = digits_in_cube(n1)
+    expected1 = 9
+    answer1 = digits_in_cube(3)
     print('Test 2 expected:', expected1)
     print('       actual:  ', answer1)
 
-    expected2 = 64
-    n2 = 4
-    answer2 = digits_in_cube(n2)
+    expected2 = 0
+    answer2 = digits_in_cube(0)
     print('Test 3 expected:', expected2)
     print('       actual:  ', answer2)
 
