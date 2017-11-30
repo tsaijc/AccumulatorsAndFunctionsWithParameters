@@ -7,8 +7,8 @@ This module demonstrates and practices:
   -- UNIT TESTING.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Jocelyn Tsai.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import m3t_tester
 
@@ -37,7 +37,7 @@ def main():
 def run_test_sum_of_digits():
     """ Tests the  sum_of_digits   function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function, as follows:
+    # DONE: 2. Implement this TEST function, as follows:
     #
     #  Step 1:  This TEST function tests the  sum_of_digits  function.
     #    So read the doc-string of the  sum_of_digits  function
@@ -72,6 +72,20 @@ def run_test_sum_of_digits():
     # Below this comment, add 3 more test cases of your own choosing.
     # ------------------------------------------------------------------
 
+    expected1 = 2
+    answer1 = sum_of_digits(1001)
+    print('Test 2 expected:', expected1)
+    print('       actual:  ', answer1)
+
+    expected2 = 10
+    answer2 = sum_of_digits(1234)
+    print('Test 3 expected:', expected2)
+    print('       actual:  ', answer2)
+
+    expected3 = 6
+    answer3 = sum_of_digits(1014)
+    print('Test 4 expected:', expected3)
+    print('       actual:  ', answer3)
 
 def sum_of_digits(number):
     """
@@ -133,6 +147,24 @@ def run_test_digits_in_cube():
     print('-----------------------------------------------------')
     print('Testing the   digits_in_cube   function:')
     print('-----------------------------------------------------')
+
+    expected = 8
+    n = 2
+    answer = digits_in_cube(n)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    expected1 = 27
+    n1 = 3
+    answer1 = digits_in_cube(n1)
+    print('Test 2 expected:', expected1)
+    print('       actual:  ', answer1)
+
+    expected2 = 64
+    n2 = 4
+    answer2 = digits_in_cube(n2)
+    print('Test 3 expected:', expected2)
+    print('       actual:  ', answer2)
 
 
 def digits_in_cube(n):
